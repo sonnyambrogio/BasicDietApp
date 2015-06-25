@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0029F2D1B3BA0EF005FE395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0029F2C1B3BA0EF005FE395 /* AppDelegate.swift */; };
+		E0029F2F1B3BA0EF005FE395 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0029F2E1B3BA0EF005FE395 /* FirstViewController.swift */; };
+		E0029F311B3BA0EF005FE395 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0029F301B3BA0EF005FE395 /* SecondViewController.swift */; };
+		E0029F341B3BA0EF005FE395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0029F321B3BA0EF005FE395 /* Main.storyboard */; };
+		E0029F361B3BA0EF005FE395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0029F351B3BA0EF005FE395 /* Assets.xcassets */; };
+		E0029F391B3BA0EF005FE395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0029F371B3BA0EF005FE395 /* LaunchScreen.storyboard */; };
+		E0029F441B3BA0F0005FE395 /* BasicDietAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0029F431B3BA0F0005FE395 /* BasicDietAppTests.swift */; };
+		E0029F4F1B3BA0F0005FE395 /* BasicDietAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0029F4E1B3BA0F0005FE395 /* BasicDietAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0029F401B3BA0F0005FE395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0029F211B3BA0EF005FE395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0029F281B3BA0EF005FE395;
+			remoteInfo = BasicDietApp;
+		};
+		E0029F4B1B3BA0F0005FE395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0029F211B3BA0EF005FE395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0029F281B3BA0EF005FE395;
+			remoteInfo = BasicDietApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0029F291B3BA0EF005FE395 /* BasicDietApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicDietApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0029F2C1B3BA0EF005FE395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0029F2E1B3BA0EF005FE395 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E0029F301B3BA0EF005FE395 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E0029F331B3BA0EF005FE395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0029F351B3BA0EF005FE395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0029F381B3BA0EF005FE395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0029F3A1B3BA0EF005FE395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0029F3F1B3BA0F0005FE395 /* BasicDietAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicDietAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0029F431B3BA0F0005FE395 /* BasicDietAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDietAppTests.swift; sourceTree = "<group>"; };
+		E0029F451B3BA0F0005FE395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0029F4A1B3BA0F0005FE395 /* BasicDietAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicDietAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0029F4E1B3BA0F0005FE395 /* BasicDietAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDietAppUITests.swift; sourceTree = "<group>"; };
+		E0029F501B3BA0F0005FE395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0029F261B3BA0EF005FE395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0029F3C1B3BA0F0005FE395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0029F471B3BA0F0005FE395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0029F201B3BA0EF005FE395 = {
+			isa = PBXGroup;
+			children = (
+				E0029F2B1B3BA0EF005FE395 /* BasicDietApp */,
+				E0029F421B3BA0F0005FE395 /* BasicDietAppTests */,
+				E0029F4D1B3BA0F0005FE395 /* BasicDietAppUITests */,
+				E0029F2A1B3BA0EF005FE395 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0029F2A1B3BA0EF005FE395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0029F291B3BA0EF005FE395 /* BasicDietApp.app */,
+				E0029F3F1B3BA0F0005FE395 /* BasicDietAppTests.xctest */,
+				E0029F4A1B3BA0F0005FE395 /* BasicDietAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0029F2B1B3BA0EF005FE395 /* BasicDietApp */ = {
+			isa = PBXGroup;
+			children = (
+				E0029F2C1B3BA0EF005FE395 /* AppDelegate.swift */,
+				E0029F2E1B3BA0EF005FE395 /* FirstViewController.swift */,
+				E0029F301B3BA0EF005FE395 /* SecondViewController.swift */,
+				E0029F321B3BA0EF005FE395 /* Main.storyboard */,
+				E0029F351B3BA0EF005FE395 /* Assets.xcassets */,
+				E0029F371B3BA0EF005FE395 /* LaunchScreen.storyboard */,
+				E0029F3A1B3BA0EF005FE395 /* Info.plist */,
+			);
+			path = BasicDietApp;
+			sourceTree = "<group>";
+		};
+		E0029F421B3BA0F0005FE395 /* BasicDietAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0029F431B3BA0F0005FE395 /* BasicDietAppTests.swift */,
+				E0029F451B3BA0F0005FE395 /* Info.plist */,
+			);
+			path = BasicDietAppTests;
+			sourceTree = "<group>";
+		};
+		E0029F4D1B3BA0F0005FE395 /* BasicDietAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0029F4E1B3BA0F0005FE395 /* BasicDietAppUITests.swift */,
+				E0029F501B3BA0F0005FE395 /* Info.plist */,
+			);
+			path = BasicDietAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0029F281B3BA0EF005FE395 /* BasicDietApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0029F531B3BA0F0005FE395 /* Build configuration list for PBXNativeTarget "BasicDietApp" */;
+			buildPhases = (
+				E0029F251B3BA0EF005FE395 /* Sources */,
+				E0029F261B3BA0EF005FE395 /* Frameworks */,
+				E0029F271B3BA0EF005FE395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicDietApp;
+			productName = BasicDietApp;
+			productReference = E0029F291B3BA0EF005FE395 /* BasicDietApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0029F3E1B3BA0F0005FE395 /* BasicDietAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0029F561B3BA0F0005FE395 /* Build configuration list for PBXNativeTarget "BasicDietAppTests" */;
+			buildPhases = (
+				E0029F3B1B3BA0F0005FE395 /* Sources */,
+				E0029F3C1B3BA0F0005FE395 /* Frameworks */,
+				E0029F3D1B3BA0F0005FE395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0029F411B3BA0F0005FE395 /* PBXTargetDependency */,
+			);
+			name = BasicDietAppTests;
+			productName = BasicDietAppTests;
+			productReference = E0029F3F1B3BA0F0005FE395 /* BasicDietAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0029F491B3BA0F0005FE395 /* BasicDietAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0029F591B3BA0F0005FE395 /* Build configuration list for PBXNativeTarget "BasicDietAppUITests" */;
+			buildPhases = (
+				E0029F461B3BA0F0005FE395 /* Sources */,
+				E0029F471B3BA0F0005FE395 /* Frameworks */,
+				E0029F481B3BA0F0005FE395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0029F4C1B3BA0F0005FE395 /* PBXTargetDependency */,
+			);
+			name = BasicDietAppUITests;
+			productName = BasicDietAppUITests;
+			productReference = E0029F4A1B3BA0F0005FE395 /* BasicDietAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0029F211B3BA0EF005FE395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Viking Panda";
+				TargetAttributes = {
+					E0029F281B3BA0EF005FE395 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					E0029F3E1B3BA0F0005FE395 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = E0029F281B3BA0EF005FE395;
+					};
+					E0029F491B3BA0F0005FE395 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = E0029F281B3BA0EF005FE395;
+					};
+				};
+			};
+			buildConfigurationList = E0029F241B3BA0EF005FE395 /* Build configuration list for PBXProject "BasicDietApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0029F201B3BA0EF005FE395;
+			productRefGroup = E0029F2A1B3BA0EF005FE395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0029F281B3BA0EF005FE395 /* BasicDietApp */,
+				E0029F3E1B3BA0F0005FE395 /* BasicDietAppTests */,
+				E0029F491B3BA0F0005FE395 /* BasicDietAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0029F271B3BA0EF005FE395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0029F391B3BA0EF005FE395 /* LaunchScreen.storyboard in Resources */,
+				E0029F361B3BA0EF005FE395 /* Assets.xcassets in Resources */,
+				E0029F341B3BA0EF005FE395 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0029F3D1B3BA0F0005FE395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0029F481B3BA0F0005FE395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0029F251B3BA0EF005FE395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0029F311B3BA0EF005FE395 /* SecondViewController.swift in Sources */,
+				E0029F2D1B3BA0EF005FE395 /* AppDelegate.swift in Sources */,
+				E0029F2F1B3BA0EF005FE395 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0029F3B1B3BA0F0005FE395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0029F441B3BA0F0005FE395 /* BasicDietAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0029F461B3BA0F0005FE395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0029F4F1B3BA0F0005FE395 /* BasicDietAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0029F411B3BA0F0005FE395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0029F281B3BA0EF005FE395 /* BasicDietApp */;
+			targetProxy = E0029F401B3BA0F0005FE395 /* PBXContainerItemProxy */;
+		};
+		E0029F4C1B3BA0F0005FE395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0029F281B3BA0EF005FE395 /* BasicDietApp */;
+			targetProxy = E0029F4B1B3BA0F0005FE395 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0029F321B3BA0EF005FE395 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0029F331B3BA0EF005FE395 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0029F371B3BA0EF005FE395 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0029F381B3BA0EF005FE395 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0029F511B3BA0F0005FE395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0029F521B3BA0F0005FE395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0029F541B3BA0F0005FE395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BasicDietApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VikingPanda.BasicDietApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E0029F551B3BA0F0005FE395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BasicDietApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VikingPanda.BasicDietApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E0029F571B3BA0F0005FE395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BasicDietAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VikingPanda.BasicDietAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasicDietApp.app/BasicDietApp";
+			};
+			name = Debug;
+		};
+		E0029F581B3BA0F0005FE395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BasicDietAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VikingPanda.BasicDietAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasicDietApp.app/BasicDietApp";
+			};
+			name = Release;
+		};
+		E0029F5A1B3BA0F0005FE395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BasicDietAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VikingPanda.BasicDietAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BasicDietApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E0029F5B1B3BA0F0005FE395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BasicDietAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VikingPanda.BasicDietAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BasicDietApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0029F241B3BA0EF005FE395 /* Build configuration list for PBXProject "BasicDietApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0029F511B3BA0F0005FE395 /* Debug */,
+				E0029F521B3BA0F0005FE395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0029F531B3BA0F0005FE395 /* Build configuration list for PBXNativeTarget "BasicDietApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0029F541B3BA0F0005FE395 /* Debug */,
+				E0029F551B3BA0F0005FE395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0029F561B3BA0F0005FE395 /* Build configuration list for PBXNativeTarget "BasicDietAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0029F571B3BA0F0005FE395 /* Debug */,
+				E0029F581B3BA0F0005FE395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0029F591B3BA0F0005FE395 /* Build configuration list for PBXNativeTarget "BasicDietAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0029F5A1B3BA0F0005FE395 /* Debug */,
+				E0029F5B1B3BA0F0005FE395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0029F211B3BA0EF005FE395 /* Project object */;
+}
