@@ -10,10 +10,24 @@ import Foundation
 
 class Functions {
     
+    let caloricDeficit: Float = 500.00
+    let execiseMultiplier: Float = 1.20
     
-    func performBmrCalulation(height: Double, weight: Double , age: Double) -> Double {
-       
+    
+    func performMaleCalorieCalulation(heightInCentimeters: Float, weightInKilograms: Float , ageInYears: Float) -> Float {
+
+        let BMR = (88.362 + (13.397 * weightInKilograms) + (4.799 * heightInCentimeters) - (5.677 * ageInYears))
+        
+        return (BMR * execiseMultiplier) - caloricDeficit
                 
+    }
+    
+    func performFemaleCalorieCalculation(heightInCentimeters: Float, weightInKilograms: Float, ageInYears: Float) -> Float {
+        
+        let BMR = (447.593 + (9.247 * weightInKilograms) + (3.098 * heightInCentimeters) - (4.330 * ageInYears))
+
+        return (BMR * execiseMultiplier) - caloricDeficit
+        
     }
     
     func calculateInches(NumberOfFeet: Float, NumberOfInches: Float) -> Float {
@@ -50,6 +64,11 @@ class Functions {
         let centimetersPerInch: Float = 2.54
         return inch * centimetersPerInch
         
+    }
+    
+    func poundsToKilograms(pounds: Float) -> Float {
+        let kilogramsPerPound: Float = 0.453592
+        return pounds * kilogramsPerPound
     }
 }
 

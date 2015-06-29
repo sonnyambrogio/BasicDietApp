@@ -14,14 +14,14 @@ class SecondViewController: UIViewController {
     //MARK:- ****** CONSTANTS AND VARIALBLES ******
     let functions = Functions()
     
-    var height: Double?
-    var weight: Double?
-    var age: Double?
+    var height: Float?
+    var weight: Float?
+    var age: Float?
     var carbs: Double?
     var fat: Double?
     var protien: Double?
-    var male: Bool = true
-    var female: Bool = true
+    var male: Bool?
+    var female: Bool?
     
     //MARK:- ****** OUTLETS AND ACTIONS ******
     //MARK: Outlets
@@ -46,27 +46,28 @@ class SecondViewController: UIViewController {
     //MARK: Actions
     
     @IBAction func CalcuateButton(sender: UIButton) {
-        if ageInput.text?.isEmpty == true || weightInput.text?.isEmpty == true || footInput.text?.isEmpty == true || inchesInput.text?.isEmpty == true {
-            showEmptyAlert()
-        } else if ageInput.text?.isEmpty == false && weightInput.text?.isEmpty == false &&  footInput.text?.isEmpty == false && inchesInput.text?.isEmpty == false {
-            convertFromInput()
-            
-            
-
-            
-            
-            updateLabels()
-        }
+        calculateCaloricNeeds()
+        DismissKeyboard()
+    
     }
-    @IBAction func maleFemaleButtonChanged(sender: UISegmentedControl) {
-        switch maleFemaleButton
+  
+    @IBAction func MaleFemalButtonChanged(sender: UISegmentedControl) {
+        switch maleFemaleButton.selectedSegmentIndex
         {
         case 0:
             male = true
-            female = false ;
+            female = false
+            BMRoutput.text = "0"
+            DismissKeyboard()
+            updateLabels()
+             ;
         case 1:
             male = false
-            female = true ;
+            female = true
+            BMRoutput.text = "0"
+            DismissKeyboard()
+            updateLabels()
+             ;
         default:
             break; 
         }
@@ -113,15 +114,21 @@ class SecondViewController: UIViewController {
         updateLabels()
     }
     
-    
-    
-    
+
     //MARK:- ****** LIFECYCLE ******
+    
+       
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
         carbSlider.value = 40
         fatSlider.value = 30
         protienSlider.value = 30
+        male = true
+        female = false
         updateLabels()
         
     }
@@ -135,9 +142,15 @@ class SecondViewController: UIViewController {
     
     // takes user text input and converts it to a number
     func convertFromInput() {
-        age = (ageInput.text?.doubleValue)!
-        weight = (weightInput.text?.doubleValue)!
-        height = Double(functions.calculateInches((footInput.text?.floatValue)!, NumberOfInches: (inchesInput.text?.floatValue)!))
+        
+        age = (ageInput.text?.floatValue)!
+        
+        weight = (weightInput.text?.floatValue)!
+        weight = weight! * Float(0.453592)
+    
+        
+        height = Float(functions.calculateInches((footInput.text?.floatValue)!, NumberOfInches: (inchesInput.text?.floatValue)!))
+        height = functions.inchToCentimeter(height!)
     }
 
     // self explanitory
@@ -195,6 +208,31 @@ class SecondViewController: UIViewController {
             presentViewController(alert, animated: true, completion: nil)
     }
     
+    func calculateCaloricNeeds() {
+        if ageInput.text?.isEmpty == true || weightInput.text?.isEmpty == true || footInput.text?.isEmpty == true || inchesInput.text?.isEmpty == true {
+            showEmptyAlert()
+        } else if ageInput.text?.isEmpty == false && weightInput.text?.isEmpty == false &&  footInput.text?.isEmpty == false && inchesInput.text?.isEmpty == false {
+            
+            if male == true && female == false {
+                convertFromInput()
+                BMRoutput.text = "\(lroundf(functions.performMaleCalorieCalulation(height!, weightInKilograms: weight!, ageInYears: age!)))"
+            }
+            
+            if male == false && female == true {
+                convertFromInput()
+                BMRoutput.text = "\(lroundf(functions.performFemaleCalorieCalculation(height!, weightInKilograms: weight!, ageInYears: age!)))"
+                
+            }
+            updateLabels()
+        }
+        
+    }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
 // *************************************** //
 }
 
@@ -216,5 +254,7 @@ extension String {
         }
         return 0
     }
+
 }
+
 
